@@ -1,0 +1,40 @@
+#grid-layout {
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                        'imagen descripcion'
+                        'comentarios comentarios';
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto auto;
+    height: 1000px;
+}
+body{
+    background-color: rgb(189, 188, 188) ;
+}
+
+img {
+    max-width: 100%;
+}
+
+#cabecera {
+    grid-area: cabecera;
+    
+}
+
+#imagen-producto {
+    grid-area: imagen;
+    
+    margin: 10px;
+}
+
+#descripcion {
+    grid-area: descripcion;
+}
+
+#comentarios {
+    grid-area: comentarios;
+}
+h1{
+    color: red;
+    text-align: center;
+    text-shadow: 3px 3px 7px rebeccapurple ;
+}
