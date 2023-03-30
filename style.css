@@ -1,18 +1,16 @@
 #grid-layout{
-    display: grid;
-    
-    grid-template-columns:  repeat(4);
-    grid-auto-rows: minmax(100px, auto);
-    
-    
+    display: auto;
+    grid-template-columns: repeat(4);
+    justify-content: center;
+    align-items: center;
+    grid-auto-rows: minmax(10px, auto);
 }
 #encabezado{
+    padding: 12px;
     background-color: rgb(122, 182, 182);
     display: flex;
-    width: 100%;
-   
-    
-   
+    justify-content: space-between;
+    width: auto;
 }
 #logo{
     grid-column: 1 / 4;
@@ -27,18 +25,11 @@
     padding: 2px;
   
 }
-#buscador{
+#buscadoryboton{
     grid-column: 3 / 4;
     justify-self: start;
     margin: 25px;
     padding: 2px;
-}
-#boton{
-    grid-column: 4 / 4;
-    justify-self: end;
-    margin: 25px;
-    padding: 2px;
-    
 }
 #contenedor1{
     width: 100%;
