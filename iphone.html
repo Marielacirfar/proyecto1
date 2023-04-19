@@ -8,6 +8,8 @@
     <title>iPhone 11 Pro Max</title>
     <link rel="icon" type="image/ico" href="imagenes/logo.jpg">
     <link rel="stylesheet" href="iphone.css">
+    <script src="index.js" defer></script>
+
   </head>
   <body>
     <div id="grid-layout">
@@ -41,36 +43,33 @@
     </div>
     <div id="comentarios">
       <h3>Comentarios de Nuestros clientes</h3>
-        <ul>
+        <ul id="comentariosul">
           <li>Excelente Producto!! ☆☆☆☆☆</li>
           <li>Conforme con mi producto llego muy rapido! ☆☆☆☆☆</li>
           <li>Totalmente recomendado.. ☆☆☆</li>
           <li>No me gusto el producto ☆</li>
         </ul>
     </div>
-      
-
-
-      <form action="https://www.google.com">
+      <form >
         <h3>Deja tu calificación de nuestro producto!</h3>
         <p>Tu opinión nos ayuda a mejorar</p>
-        
         <label class="opc"><input type="radio"  name="opcion" value="1" checked>1<br></label>
         <label class="opc"><input type="radio"  name="opcion" value="2">2<br></label>
         <label class="opc"><input type="radio"  name="opcion" value="3">3<br></label>
         <label class="opc"><input type="radio"  name="opcion" value="4">4<br></label>
         <label class="opc"><input type="radio"  name="opcion" value="5">5<br></label>
         <br>
-
-        <button><b>Enviar calificación</b></button>        
-
+        <input type="text" id="cajacomentarios">
+        <br>
+        <button id="boton"><b>Enviar comentario</b></button>
       </form>
       <h4>ALBARITO!!!</h4>
 
       
     </div>
  
-          
   </body>
-  <footer><a href="index.html">Volver</a></footer>
+  <footer>
+    <img src="./imagenes/flechaVolver.png">
+    <a href="index.html">Volver</a></footer>
 </html>
