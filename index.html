@@ -1,60 +1,43 @@
 <!DOCTYPE html>
 <!-- html es el elemento raiz-->
 <html lang="es">
-  <head>   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Marketplace Online-Shopp</title>
-    <link rel="icon" type="image/ico" href="imagenes/logo.jpg">
-    <link href="style.css" rel="stylesheet"/>   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="imagenes/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Marketplace online shop</title>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <div id="grid-layout">
-      
-        <header id="encabezado">
-          
-          <div id="logo">
-            <img  src="imagenes/logo.jpg" alt="logo" title="Online-Shopp">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-12" id="header">
+          <div class="col-2">
+            <img src="./imagenes/logo.jpg" id="imgLogo" alt="Logo">
           </div>
-            <div id="titulo">
-              <h1>Encontra todos nuestros productos </h1>
-            </div>
-              <div id="buscadoryboton">
-                <textarea  placeholder="¿QUE ESTAS BUSCANDO..?"></textarea>
-                <br>
-                <b><button >BUSCAR</button><br>
-              </div>
-        </header>
-           
-      <section id="contenedor1">
-
-        <div class="caja">
-          <a href="./iphone.html"target="_blank">
-            <img class="articulos" src="imagenes/iphone.jpg"  alt="iphone" title="iPhone 11 Pro" > 
-          <h3><b>IPHONE 11 PRO</b></h3></a>   
-
+          <div class="col d-flex justify-content-center align-content-center">
+            <h3>Encontrá todos nuestros productos</h3>
+          </div>
+          <div class="col-2 gy-2 d-flex flex-column ">
+            <input type="text" placeholder="¿Que estás buscando...?">
+            <br/>
+            <button id="search">Buscar</button>
+          </div>
         </div>
-        <div class="caja">
-          <a href="./iphone.html"target="_blank"><img class="articulos"
-          src="imagenes/lenovo.jpg" alt="notebook" title="Notebook Lenovo">
-          <h3><b>LENOVO THINK PAD</b></h3> </a>
-          
-
+      </div>
+    </div>
+    <div class="container-fluid text-center p-4">
+      <div class="row gx-5" >
+        <div class="d-flex" id="productsContainer">
         </div>
-        <div class="caja">
-          <a href="./iphone.html"target="_blank"><img class="articulos"src="imagenes/impresora.jpg" alt="impresora" title="Impresora HP LaserJet Pro501  ">
-          <h3><b>LASERJET PRO 501</b></h3> </a>
-        </div>
-        <div class="caja">
-          <a href="./iphone.html"target="_blank"><img class="articulos"src="imagenes/Moonitor.jpg" alt="impresora" title="Impresora HP LaserJet Pro501  ">
-          <h3><b>Monitor 1920 x 1080 FHD (24CL1Y BI) </b></h3> </a>
-        </div>
-
-      </section>  
+      </div>
     </div>
   </body>
 </html>
