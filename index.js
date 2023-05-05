@@ -1,6 +1,5 @@
-let button = document.getElementById("search")
 let productsDiv = document.getElementById("productsContainer")
-button.addEventListener("click", getProducts)
+getProducts()
 function subirComentario(evento) {
     evento.preventDefault();
     var comentario = document.getElementById("cajacomentarios").value;
