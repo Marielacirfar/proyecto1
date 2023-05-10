@@ -58,6 +58,8 @@ img {
   width: 200px;
 }
 #header{
+  margin-left: 12px;
+  margin-right: 12px;
   padding: 24px;
   display: flex;
   justify-content: space-between;
@@ -68,18 +70,23 @@ img {
 #imgLogo{
   border-radius: 25%;
 }
-.productCard{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  max-width: 500px;
-  max-height: 1000px;
+#productsContainer{
   display: flex;
-  flex-direction: column;
-  text-align: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#productsContainer div{
+  height: max-content;
+  margin-left: 12px;
+  margin-right: 12px;
+  max-width: 300px;
+  max-height: 700px;
+  min-width: 200px;
+  min-height: 500px;
   border-radius: 12px;
   background-color: #016b89;
   padding: 24px;
-  
 }
 p{
   color: white;
