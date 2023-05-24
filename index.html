@@ -41,7 +41,7 @@
                   <p style="color: black;">Loading!!</p>
                 </div>
                 <div v-else class="d-flex" id="productsContainer">
-                  <div v-for="product in productsList" class="productCard">
+                  <div v-for="(product, index) in productsList" class="productCard">
                     <a href="/"><h4>{{ product.title }}</h4></a>
                     <img :src="product.image_url" alt="">
                     <p>{{ product.description }}</p>
@@ -49,6 +49,7 @@
                       <strong>{{ type.ramAmount }}</strong>
                       <p>{{"$ " + type.price}}</p>
                     </div>
+                    <button @click="openModal(index)">Comprar</button>
                   </div>
                 </div>
             </div>
